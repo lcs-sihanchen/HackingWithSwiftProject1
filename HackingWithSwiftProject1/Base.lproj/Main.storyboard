@@ -71,14 +71,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MtN-Q2-X0i">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MtN-Q2-X0i">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="MtN-Q2-X0i" firstAttribute="centerX" secondItem="HcN-mQ-VSz" secondAttribute="centerX" id="0w8-0I-bwT"/>
+                            <constraint firstItem="MtN-Q2-X0i" firstAttribute="leading" secondItem="2cW-Aj-PO5" secondAttribute="leading" id="HoN-DB-Wy1"/>
+                            <constraint firstItem="MtN-Q2-X0i" firstAttribute="top" secondItem="HcN-mQ-VSz" secondAttribute="topMargin" constant="-44" id="L2P-Is-UDG"/>
+                            <constraint firstItem="MtN-Q2-X0i" firstAttribute="centerY" secondItem="HcN-mQ-VSz" secondAttribute="centerY" id="Zyr-NB-Qf6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2cW-Aj-PO5"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="MtN-Q2-X0i" id="Pwi-ph-did"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AnX-CR-Lyl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
