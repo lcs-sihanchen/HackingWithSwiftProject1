@@ -6,6 +6,8 @@
 //  Copyright © 2020 Chen, Sihan. All rights reserved.
 //
 
+
+
 import UIKit
 
 class ViewController: UITableViewController {
@@ -57,6 +59,8 @@ class ViewController: UITableViewController {
             
             // 2: success! Set its selectedImage property
             vc.selectedImage = pictures[indexPath.row]
+            vc.totalNumber = pictures.count
+            vc.ofWhichPicture = String(indexPath.row + 1)
             
             // 3: now push it onto the navigation controller
             navigationController?.pushViewController(vc, animated:

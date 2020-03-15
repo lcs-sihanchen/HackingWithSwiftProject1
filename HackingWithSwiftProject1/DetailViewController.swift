@@ -14,12 +14,15 @@ class DetailViewController: UIViewController {
     
     var selectedImage: String?
     
+    var totalNumber: Int?
+    
+    var ofWhichPicture: String?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-      
+        title = "Picture \(ofWhichPicture ?? "1") of \(totalNumber ?? 10)"
      
         // Do any additional setup after loading the view.
         navigationItem.largeTitleDisplayMode = .never
