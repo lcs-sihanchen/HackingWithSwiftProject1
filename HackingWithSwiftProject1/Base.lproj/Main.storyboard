@@ -48,7 +48,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Mx6-nf-PIa">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IUA-gy-i7W" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBarsOnTap="YES" id="IUA-gy-i7W" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tXC-S4-9ZM">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
