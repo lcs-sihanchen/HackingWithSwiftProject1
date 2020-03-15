@@ -44,7 +44,6 @@ class ViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Picture", for: indexPath)
         
         cell.textLabel?.text = pictures[indexPath.row]
-        
         return cell
     }
     
