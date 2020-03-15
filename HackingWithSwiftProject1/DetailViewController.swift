@@ -12,6 +12,7 @@ class DetailViewController: UIViewController {
     
     @IBOutlet var imageView: UIImageView!
     
+    // Stored Properties
     var selectedImage: String?
     
     var totalNumber: Int?
@@ -22,9 +23,12 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Give it a default value to get rid of "Optional"
         title = "Picture \(ofWhichPicture ?? "1") of \(totalNumber ?? 10)"
      
         // Do any additional setup after loading the view.
+        
+        // Never displays a large title
         navigationItem.largeTitleDisplayMode = .never
         if let imageToLoad = selectedImage {
             imageView.image = UIImage(named: imageToLoad)
@@ -32,12 +36,12 @@ class DetailViewController: UIViewController {
         }
     }
     
-    
+    // Appear when view is on
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.hidesBarsOnTap = true
     }
-    
+    // Disappear when view is hidden
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.hidesBarsOnTap = false
