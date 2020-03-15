@@ -63,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				9C10C712241C330900356699 /* HackingWithSwiftProject1 */,
-				9C10C711241C330900356699 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +72,7 @@
 				9C10C710241C330900356699 /* HackingWithSwiftProject1.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		9C10C712241C330900356699 /* HackingWithSwiftProject1 */ = {
@@ -87,6 +87,7 @@
 				9C10C71E241C330B00356699 /* LaunchScreen.storyboard */,
 				9C10C721241C330B00356699 /* Info.plist */,
 				9C10C729241C358400356699 /* Content */,
+				9C10C711241C330900356699 /* Products */,
 			);
 			path = HackingWithSwiftProject1;
 			sourceTree = "<group>";
@@ -94,16 +95,16 @@
 		9C10C729241C358400356699 /* Content */ = {
 			isa = PBXGroup;
 			children = (
-				9C10C72A241C358400356699 /* nssl0049.jpg */,
-				9C10C72B241C358400356699 /* nssl0046.jpg */,
-				9C10C72C241C358400356699 /* nssl0091.jpg */,
-				9C10C72D241C358400356699 /* nssl0045.jpg */,
-				9C10C72E241C358400356699 /* nssl0051.jpg */,
+				9C10C732241C358400356699 /* nssl0033.jpg */,
+				9C10C733241C358400356699 /* nssl0034.jpg */,
 				9C10C72F241C358400356699 /* nssl0041.jpg */,
 				9C10C730241C358400356699 /* nssl0042.jpg */,
 				9C10C731241C358400356699 /* nssl0043.jpg */,
-				9C10C732241C358400356699 /* nssl0033.jpg */,
-				9C10C733241C358400356699 /* nssl0034.jpg */,
+				9C10C72D241C358400356699 /* nssl0045.jpg */,
+				9C10C72B241C358400356699 /* nssl0046.jpg */,
+				9C10C72A241C358400356699 /* nssl0049.jpg */,
+				9C10C72E241C358400356699 /* nssl0051.jpg */,
+				9C10C72C241C358400356699 /* nssl0091.jpg */,
 			);
 			path = Content;
 			sourceTree = "<group>";

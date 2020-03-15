@@ -25,10 +25,13 @@ class ViewController: UITableViewController {
         let items = try! fm.contentsOfDirectory(atPath: path)
         for item in items{
             if item.hasPrefix("nssl"){
+              
                 pictures.append(item)
+                
             }
             
         }
+        pictures.sort()
         print(pictures)
         
         
