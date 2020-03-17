@@ -33,6 +33,9 @@ class DetailViewController: UIViewController {
         if let imageToLoad = selectedImage {
             imageView.image = UIImage(named: imageToLoad)
             
+        navigationItem.rightBarButtonItem =
+            UIBarButtonItem(barButtonSystemItem: .action, target: self,
+                                action: #selector(shareTapped))
         }
     }
     
@@ -47,6 +50,14 @@ class DetailViewController: UIViewController {
         navigationController?.hidesBarsOnTap = false
     }
     
+    @objc func shareTapped() {
+        // Promote your app
+        let text = "Rate my app on App Store!"
+        let UIAvc = UIActivityViewController(activityItems: [text], applicationActivities: [])
+        UIAvc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
+        
+        present(UIAvc, animated: true)
+    }
     /*
      // MARK: - Navigation
      
